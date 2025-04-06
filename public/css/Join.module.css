@@ -1,0 +1,64 @@
+.join_inner_container {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.join_navBar {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+}
+.return_btn {
+  margin-left: 5px;
+  cursor: pointer;
+}
+.title {
+  margin-left: 170px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.join_body_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.join_registerInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  margin-top: 30px;
+  padding-inline: 30px;
+}
+.register_email,
+.register_PW,
+.register_username {
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.join_btn {
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  padding: 16px 20px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}

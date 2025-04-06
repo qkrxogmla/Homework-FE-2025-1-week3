@@ -1,0 +1,25 @@
+.login_btn {
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  padding: 16px 20px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+.forgot_PW {
+  margin-top: 5px;
+  text-decoration: underline;
+  color: gainsboro;
+  cursor: pointer;
+}
+.title {
+  margin-left: 177px;
+  font-weight: 700;
+  font-size: 20px;
+}
