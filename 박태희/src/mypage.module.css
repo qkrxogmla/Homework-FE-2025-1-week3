@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 390px;
+  height: 778px;
+  margin: 0 auto;
+}
+.setting_bar {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.profile_info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.profile_info_name_mail {
+  margin-left: 20px;
+  text-align: left;
+  align-items: start;
+}
+.profile {
+  width: 80px;
+  height: 80px;
+}
+.profile_info_mail {
+  color: #7e7e7e;
+}
+.low_bar {
+  width: 390px;
+  position: absolute;
+  bottom: 7%;
+  gap: 65px;
+  display: flex;
+  justify-content: center;
+}
+.menu_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+
+.inactive_icon {
+  color: #b0b0b0; /* 회색 */
+}
+
+.inactive_text {
+  color: #b0b0b0;
+  margin-top: 4px;
+}
+
+.active_icon {
+  color: #000000; /* 검정 */
+}
+
+.active_text {
+  color: #000000;
+  margin-top: 4px;
+}
