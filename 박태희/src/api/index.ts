@@ -8,7 +8,7 @@ type Response<TData> =
       message: string;
     };
 
-const API_URL = '/api';
+const API_URL = 'https://server.survey-josha.site/api';
 
 export const api = async <TData>({
   path,
