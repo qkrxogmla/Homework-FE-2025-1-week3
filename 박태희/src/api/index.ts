@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 type Response<TData> =
   | {
       type: 'success';
@@ -11,15 +9,6 @@ type Response<TData> =
     };
 
 const API_URL = import.meta.env.VITE_API_URL;
-
-axios
-  .get(`${API_URL}/example`)
-  .then((response) => {
-    console.log(response.data);
-  })
-  .catch((error) => {
-    console.error('API 오류:', error);
-  });
 
 export const api = async <TData>({
   path,
