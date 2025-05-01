@@ -1,8 +1,8 @@
-import { Bell, Compass, House, Settings, User } from 'lucide-react';
+import { Settings } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 import { api } from './api';
-import profile from './assets/profile.png';
+import Menubar from './components/Menubar';
 import styles from './mypage.module.css';
 import { TokenLocalStorageRepository } from './repository/localstorages';
 
@@ -63,7 +63,7 @@ const MyPage = () => {
       </div>
       <div className={styles.profile_info}>
         <img
-          src={profile}
+          src="../public/assets/profile.png"
           alt="profile"
           className={styles.profile}
         />
@@ -74,36 +74,12 @@ const MyPage = () => {
           <p className={styles.profile_info_mail}>{user?.email}</p>
         </div>
       </div>
-      <div className={styles.low_bar}>
-        <div className={styles.menu_item}>
-          <House
-            size={24}
-            className={styles.inactive_icon}
-          />
-          <span className={styles.inactive_text}>피드</span>
-        </div>
-        <div className={styles.menu_item}>
-          <Compass
-            size={24}
-            className={styles.inactive_icon}
-          />
-          <span className={styles.inactive_text}>둘러보기</span>
-        </div>
-        <div className={styles.menu_item}>
-          <Bell
-            size={24}
-            className={styles.inactive_icon}
-          />
-          <span className={styles.inactive_text}>알림</span>
-        </div>
-        <div className={styles.menu_item}>
-          <User
-            size={24}
-            className={styles.active_icon}
-          />
-          <span className={styles.active_text}>My</span>
-        </div>
-      </div>
+      <Menubar
+        house="inactive"
+        compass="inactive"
+        bell="inactive"
+        user="active"
+      />
     </div>
   );
 };
