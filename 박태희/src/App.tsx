@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router';
 
+import Feed from './Feed.tsx';
 import Home from './home.tsx';
 import Login from './login.tsx';
 import MyPage from './mypage.tsx';
@@ -24,6 +25,10 @@ const App = () => {
         <Route
           path="/mypage"
           element={<MyPage />}
+        />
+        <Route
+          path="/feed"
+          element={<Feed />}
         />
       </Routes>
     </BrowserRouter>

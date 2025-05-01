@@ -1,5 +1,5 @@
 import { Bell, Compass, House, User } from 'lucide-react';
-import { use } from 'react';
+import { useNavigate } from 'react-router';
 
 import styles from './Menubar.module.css';
 
@@ -11,12 +11,14 @@ type MenubarProps = {
 };
 
 const Menubar = ({ house, compass, bell, user }: MenubarProps) => {
+  const navigate = useNavigate();
   return (
     <div className={styles.low_bar}>
       <div className={styles.menu_item}>
         <House
           size={24}
           className={styles[`${house}_icon`]}
+          onClick={() => void navigate('/feed')}
         />
         <span className={styles[`${house}_text`]}>피드</span>
       </div>
@@ -38,6 +40,7 @@ const Menubar = ({ house, compass, bell, user }: MenubarProps) => {
         <User
           size={24}
           className={styles[`${user}_icon`]}
+          onClick={() => void navigate('/mypage')}
         />
         <span className={styles[`${user}_text`]}>My</span>
       </div>
