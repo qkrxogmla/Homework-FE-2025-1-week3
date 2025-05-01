@@ -1,0 +1,20 @@
+.weekDatesContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 10px 50px;
+}
+.sunday {
+  color: #fe3e3e;
+}
+.saturday {
+  color: #0089ff;
+}
+.today {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+.daywrap {
+  width: 6%;
+}
