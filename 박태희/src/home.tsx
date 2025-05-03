@@ -33,7 +33,7 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <img
-        src="../public/assets/logo.png"
+        src="/public/assets/logo.png"
         alt="logo"
         className={styles.logo}
       />
