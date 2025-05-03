@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Menubar from './components/Menubar';
 import WeekDates from './components/WeekDates';
 import styles from './Feed.module.css';
