@@ -29,35 +29,3 @@
 .profile_info_mail {
   color: #7e7e7e;
 }
-.low_bar {
-  width: 390px;
-  position: absolute;
-  bottom: 7%;
-  gap: 65px;
-  display: flex;
-  justify-content: center;
-}
-.menu_item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 12px;
-}
-
-.inactive_icon {
-  color: #b0b0b0; /* 회색 */
-}
-
-.inactive_text {
-  color: #b0b0b0;
-  margin-top: 4px;
-}
-
-.active_icon {
-  color: #000000; /* 검정 */
-}
-
-.active_text {
-  color: #000000;
-  margin-top: 4px;
-}

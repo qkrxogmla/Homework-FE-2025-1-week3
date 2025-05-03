@@ -50,7 +50,6 @@ const Signup = () => {
           setResponseMessage(response.message);
           return;
         }
-        alert('회원가입 성공! 로그인 페이지로 이동합니다.');
         void navigate('/login');
       })
       .catch((error) => {

@@ -67,7 +67,7 @@ const Login = () => {
           }
           setUser({ name: response.data.name, email: response.data.email });
           setToken({ token: response.data.token });
-          void navigate('/mypage');
+          void navigate('/feed');
         }
       })
       .catch((error) => {

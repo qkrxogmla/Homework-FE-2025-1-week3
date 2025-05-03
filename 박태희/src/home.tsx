@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
 
-import logo from './assets/logo.png';
 import styles from './home.module.css';
 
 interface TodoButtonProps {
@@ -34,7 +33,7 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <img
-        src={logo}
+        src="../public/assets/logo.png"
         alt="logo"
         className={styles.logo}
       />
