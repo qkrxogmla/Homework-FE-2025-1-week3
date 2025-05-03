@@ -63,7 +63,7 @@ const MyPage = () => {
       </div>
       <div className={styles.profile_info}>
         <img
-          src="/public/assets/profile.png"
+          src="/assets/profile.png"
           alt="profile"
           className={styles.profile}
         />
